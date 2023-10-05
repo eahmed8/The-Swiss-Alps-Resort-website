@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Eram Ahmed">
+    <meta name="description" content="The Swiss Alps|Contact page">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>The Swiss Alps|Contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/Blue_Green_Minimalist_Mountain_Logo.png" alt="logo" />
+        </a>
+        <h1>The Swiss Alps Resort</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page1.html">Accommodations</a></li>
+                <li><a class="current" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <div>
+                <img class="hero_image" src="images/swiss-valley.jpg"
+                    alt="lush green valley surrounded by snow covered mountains">
+            </div>
+
+        <section class="contact_us_main">
+            <div class="contact_us_left">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream
+                    vacation
+                    with
+                    us!</p>
+                <p>Required fields marked with a <span class="required-label">*</span></p>
+                <img src="images/swiss-peak.jpg" alt="A picturesque sunset at The Swiss Alps Resort">
+            </div>
+            <div class="contact_us_right">
+                <form class="contact_us_form" action="https://wp.zybooks.com/form-viewer.php" method="POST"
+                    target="_blank">
+                    <label for="my-name">Full name*</label>
+                    <input type="text" name="my-name" id="my-name" required>
+
+                    <label for="email">Email Address <span class="required-label">*</span></label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone-number">Phone Number <span class="required-label">*</span></label>
+                    <input type="tel" id="phone-number" name="phone-number" required>
+
+                    <fieldset>
+                        <legend>Preferred Method of Contact</legend>
+                        <input type="radio" name="contact-pref" id="pref-email" checked>
+                        <label for="pref-email">Email</label>
+                        <input type="radio" name="contact-pref" id="pref-phone">
+                        <label for="pref-phone">Phone</label>
+                    </fieldset>
+
+                    <label for="comments">Comments <span class="required-label">*</span></label>
+                    <textarea id="comments" name="comments" required></textarea>
+
+                    <div>
+                        <input id="my-submit" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 The Swiss Alps Resort</p>
+        <p>
+            This site is for educational purposes only
+        </p>
+    </footer>
+</body>
+
+</html>
